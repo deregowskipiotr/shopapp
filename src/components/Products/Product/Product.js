@@ -3,8 +3,8 @@ import {useState, useMemo} from 'react';
 //import clsx from 'clsx';
 //import Button from './ProductForm/Button/Button';
 import PropTypes from 'prop-types';
-import ProductForm from '../ProductForm/ProductForm';
-import ProductImage from '..ProductImage/ProductImage';
+import ProductForm from './ProductForm/ProductForm';
+import ProductImage from '.ProductImage/ProductImage';
 
 const Product = ({title, basePrice, colors, sizes,name}) => {
 
