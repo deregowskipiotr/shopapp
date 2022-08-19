@@ -6,7 +6,7 @@ import OptionSize from './OptionSize/OptionSize';
 
 
 
-const ProductForm = ({handleSubmit, currentSize, currentColor, sizes, colors,setCurrentSize, setCurrentColor}) => {
+const ProductForm = ({handleSubmit, currentSize, currentColor, sizes, colors, setCurrentSize, setCurrentColor}) => {
 
   return (
     <form onSubmit={handleSubmit}>
@@ -22,9 +22,9 @@ const ProductForm = ({handleSubmit, currentSize, currentColor, sizes, colors,set
 ProductForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   sizes: PropTypes.array.isRequired,
-  currentSize: PropTypes.object.isRequired,
+  currentSize: PropTypes.string.isRequired,
   setCurrentSize: PropTypes.func.isRequired,
-  color: PropTypes.array.isRequired,
+  colors: PropTypes.array.isRequired,
   currentColor: PropTypes.string.isRequired,
   setCurrentColor: PropTypes.func.isRequired,
 };

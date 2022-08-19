@@ -6,9 +6,9 @@ const ProductImage = ({name, currentColor, title}) => {
   return (
     <div className={styles.imageContainer}>
       <img
-      className={styles.image}
-      alt={title}
-      scr={`${process.env.PUBLIC_URL}images/products/shirt-${name}--${currentColor}.jpg`}/>
+  className={styles.image}
+  alt={title}
+  src={`${process.env.PUBLIC_URL}/images/products/shirt-${name}--${currentColor}.jpg`} />
     </div>
   );
 };

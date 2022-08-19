@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 import ProductForm from './ProductForm/ProductForm';
 import ProductImage from './ProductImage/ProductImage';
 
-const Product = ({title, basePrice, colors, sizes,name}) => {
+const Product = ({title, basePrice, colors, sizes, name}) => {
 
   const handleSubmit = e => {
 
     e.preventDefault();
-    console.log('Name:' + title);
     console.log('Summary');
     console.log('==============');
+    console.log('Name:' + title);
     console.log('Price:' + getPrice);
     console.log('Size:' + currentSize);
     console.log('Color:' + currentColor);
