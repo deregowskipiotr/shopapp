@@ -6,8 +6,12 @@ import PropTypes from 'prop-types';
 import ProductForm from './ProductForm/ProductForm';
 import ProductImage from './ProductImage/ProductImage';
 
-const Product = ({title, basePrice, colors, sizes, name}) => {
+//import productsData from '../../../data/products';
 
+const Product = ({name, title, sizes, basePrice, colors}) => {
+  
+  
+ 
   const handleSubmit = e => {
 
     e.preventDefault();
@@ -24,8 +28,12 @@ const Product = ({title, basePrice, colors, sizes, name}) => {
 
    const getPrice = useMemo(() => {
         const found = sizes.find(element => element.name === currentSize)
-        return basePrice + found.additionalPrice;
-      }, [currentSize, basePrice, sizes]);
+        return basePrice + (found?found.additionalPrice:0);
+      },
+      [currentSize, basePrice, sizes]);
+      
+      
+      
 
   return (
     <article className={styles.product}>
